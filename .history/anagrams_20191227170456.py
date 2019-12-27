@@ -7,8 +7,15 @@ __author__ = "Imraj423"
 import sys
 
 
-def alphabetize(string):
-    return "".join(sorted(string.lower()))
+# def alphabetize(string):
+#      """ alphabetize
+#         Given a string, return a string that includes the same letters in
+#         alphabetical order.
+#         Example:
+#         >>> print alphabetize('cab')
+#         abc
+#     """
+#     return "".join(sorted(string.lower()))
 
 
 def find_anagrams(words):

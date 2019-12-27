@@ -8,10 +8,6 @@ import sys
 
 
 def alphabetize(string):
-    return "".join(sorted(string.lower()))
-
-
-def find_anagrams(words):
     anagrams = {}
     for word in words:
         w = alphabetize(word)

@@ -8,6 +8,13 @@ import sys
 
 
 def alphabetize(string):
+     """ alphabetize
+        Given a string, return a string that includes the same letters in
+        alphabetical order.
+        Example:
+        >>> print alphabetize('cab')
+        abc
+    """
     return "".join(sorted(string.lower()))
 
 

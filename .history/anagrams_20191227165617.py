@@ -8,18 +8,13 @@ import sys
 
 
 def alphabetize(string):
-    return "".join(sorted(string.lower()))
-
-
-def find_anagrams(words):
     anagrams = {}
     for word in words:
         w = alphabetize(word)
-        if w in anagrams:
-            anagrams[w].append(word)
-        else:
+        if not w in anagrams:
             anagrams[w] = [word]
-    return anagrams
+        else:
+            anagrams[w].append(word)
 
 
 if __name__ == "__main__":
